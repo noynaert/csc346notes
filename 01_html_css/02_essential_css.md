@@ -1,4 +1,4 @@
-02 Essential CSS
+# 02 Essential CSS
 
 ## CSS
 
