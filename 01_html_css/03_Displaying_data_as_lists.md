@@ -1,8 +1,6 @@
-# 03 Displaying Data
+# 03 Displaying Data As Lists
 
-## Lists
-
-### Unordered Lists
+## Unordered Lists
 
 No order is being describe
 
@@ -14,7 +12,7 @@ No order is being describe
 <ul>
 ```
 
-### Ordered Lists
+## Ordered Lists
 
 Only use when the order is significant.
 
@@ -26,7 +24,7 @@ Only use when the order is significant.
 </ol>
 ```
 
-### Nested Lists
+## Nested Lists
 
 The key thing to realize is that the inner list is part of the line above it.
 
@@ -43,7 +41,3 @@ The key thing to realize is that the inner list is part of the line above it.
    <li>Physics</li>
 <ul>
 ```
-
-## Tables
-
-### Basic tables -- only pre-html5 elements
