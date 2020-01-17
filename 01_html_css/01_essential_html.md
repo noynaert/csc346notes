@@ -108,4 +108,16 @@
   * Used to implement links
   * uses the href="" attribute
   * I strongly suggest copy/paste for the value, even if it is simple.
+* &lt;section id="something">
+  * block element
+  * Used for creating a group of related headings and paragraphs.
+  * Should be followed by a &lt;h?> tag.  It is usually an &lt;h2>
+  * Nothing visible happens
+  * Usually has an id attribute
+
+  ## ID attributes
+
+  * A specific id may only be used one time on a page.
+  * IDs cannot contain blank spaces
+  * ids should be lower case.  Keep them simple and easy to remember.
 
