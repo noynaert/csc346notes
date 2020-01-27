@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form Example</title>
+    <style>
+        form {
+            border: 1 px solid black;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>A form</h1>
+
+    <form method="GET" action="https://webservices.missouriwestern.edu/users/noynaert/csc346/api/generic.php">
+        <label>Team: </label><input type="text" name="team">
+        <br>
+        <label>City: </label><input type="text" name="city">
+        <br>
+        <input type="hidden" name="league" value="NFL">
+        <input type="submit">
+
+    </form>
+
+</body>
+
+</html>
