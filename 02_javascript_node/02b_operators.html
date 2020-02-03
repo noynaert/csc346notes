@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Operations</title>
+    <script>
+       function sum(a, b){
+           return a+b;
+       }
+       function multiply(a, b){
+           return a*b;
+       }
+    </script>
+</head>
+<body>
+    <script>
+    console.log (3/2); 
+    
+if(4 - 2*2){
+    console.log("True");
+}else{
+    console.log("False");
+}
+
+if( 9 == "9"){
+    console.log("True");
+}else{
+    console.log("False");
+}
+if( 9 === "9"){
+    console.log("True");
+}else{
+    console.log("False");
+}
+
+var bob = sum;
+console.log (bob(3,4));
+console.log(bob("Hello, ", "World"));
+bob = multiply;
+console.log(bob(8,3));
+console.log(bob("Hello, ", "World"));
+bob = function (a,b){return a%b;};
+console.log(bob(17,3));
+
+var result = function(a,b){
+   let sumSquares = a*a + b*b;
+   return Math.sqrt(sumSquares);
+}
+console.log(result(3, 4));
+
+    </script>
+</body>
+</html>
