@@ -91,3 +91,22 @@ Person {
   name: [Function],
   bowlingHigh: 210 }
 ```
+## Accessing members
+
+Members may either be accessed using dot notation or array notation.  
+
+Every object is effectively an assoiative array.
+
+```node
+console.log(book.title);
+console.log(book["title"]);
+```
+
+Normally we use the dot notation.  But you have to use array notation if there is a blank space or special character in the property name.
+
+```node
+var computer = {
+   "manufacturer":"Dell",
+   "model number":"Latitude 4202"
+};
+```
