@@ -2,15 +2,82 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Cat Facts</title>
     <script>
-        function promiseObject(){
-            let promise = new Promise();
-            console.log(promise);
-        }
+        const catFactsApi='https://catfact.ninja/fact';
+        const pictsAPIKey='DEMO-API-KEY';
+        var catPicApi="https://api.thecatapi.com/v1/images/search"+"?format=json&api_key="+pictsAPIKey;
+        catPicApi="https://source.unsplash.com/1600x900/?cat";
+        catPicApi="https://api.thecatapi.com/v1/images/search?format=json";
     </script>
+        <script>
+            // var prom = new Promise(function(resolve,reject){
+            //     resolve("We were successful");
+            // });
+            // console.log(prom);
+            function viewFact(fact){
+                let whence=document.getElementById('factLocation');
+                whence.innerHTML = fact;
+            }
+            function viewPicture(picJson){
+                console.log("The JSON is: "+picJson);
+                // let url = picJson.url;
+                // console.log("The URL is: "+JSON.stringify(url));
+                // document.getElementById('catPicLocation').src = picJson.url;
+            }
+            //require('dotenv').config();
+            function getFact2(){
+                fetch(catPicApi)
+                .then(response=>{
+                    console.log("Raw Response: " + response);
+                    console.log("Response Json: "+ response.json());
+                    return response.json();
+                })
+                .catch(err=>console.log(err));
+            }
+            function getFact(){
+               fetch(catFactsApi)
+                   .then(response=>{
+                       console.log("Raw response: "+response.json);
+                       return response.json();
+                   })
+                   .then(factJson =>{
+                       console.log("response as JSON: "+factJson);
+                       viewFact(factJson.fact);
+                       return factJson.fact;
+                   })
+                   .then(theFact =>{
+                       console.log("In this example I am not using the fact that "+theFact);
+                       console.log("---Beginning second fetch---")
+                       console.log("API: "+catPicApi);
+                       return fetch(catPicApi);
+                   })
+                   .then(response=>{
+                       console.log("I got "+response);
+                       return response.json();
+                   })
+                   .then(picJson=>{
+                       console.log("data[0] is "+picJson[0];
+                   })
+                   .catch(err => console.log(err));
+               
+            }
+        </script>
+    
 </head>
 <body>
     <h1>Cat Facts</h1>
+    <script>
+        var prom = new Promise(function(resolve,reject){
+            resolve("We were successful");
+        });
+        console.log(prom);//not really needed
+    </script>
+    <p><button onclick="getFact()">Get A cat fact</button></p>
+    <hr>
+    <p style="background-color:bisque">Fact: <span id="factLocation">&nbsp;</span></p>
+    <div>
+        <img id="catPicLocation">
+    </div>
 </body>
 </html>
