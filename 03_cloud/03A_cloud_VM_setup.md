@@ -104,3 +104,5 @@ sudo pm2 save  #not really sure this is necessary.
 * In VS Code set up a local folder.  Put the following line in your sftp.json file: ```"privateKeyPath": "???/.ssh/id_ecdsa",```  Replace the ??? with the directory location.  On a linux system it is probably ~
 * VS Code also has remote editing.  That would probably be better than VS Code.
 * Optionally, put the IP address of your server in your hosts file.  Note that this will change if you stop the server between work sessions.  You can lock in a static IP address, but I think it costs more (Roughly $3 per month, from what I see. Prices went up a lot in 2020.  IPv6 should be cheaper, but so far Google's support of IPv6 appears spotty.
+   * In Linux (and I think Macs) edit /etc/hosts using sudo.
+   * On Windows 10, it should be at C:\Windows\System32\drivers\etc\hosts.  You will need to edit it as admin.
