@@ -51,7 +51,9 @@ In the list of VM instances, connect to the server with the "SSH/Open in Browser
    * sudo dd if=/dev/zero of=/swapfile bs=1024 count=1048576
         * this will take a while!
    * sudo chmod 600 /swapfile
+   * sudo mkswap /swapfile
    * sudo swapon
+   * use htop to verify swap is working
    * Use nano or vi to add the following line to /etc/fstab
 
    ```text
