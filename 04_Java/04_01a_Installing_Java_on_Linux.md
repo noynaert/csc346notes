@@ -1,12 +1,27 @@
 # Installing Java on Linux
 
+## Verify your version of Java
+
+First do the command 
+
+```bash
+      java --version
+``` 
+### About the versions
+
+* Java 11 is probably best, but anything 9 or later should work
+* Openjdk vs Oraclejdk
+
+## Your OS
+
+### Linux
 These notes are linux-centric.  I will leave you on your own if you are on Windows or Mac.  But you aren't really left alone because there are many web pages that tell you how to do this.
 
 I am also using a distro that is downstream from Ubuntu.  Most things should work in other distros, but you will need to change "apt" to something like "dnf" or "yum" in other distributions.
 
-## Verify your version of Java
+### Windows and Mac
 
-First do the command ```java --version``` to see if you have Java and that it is at least v11.  Actually, I suspect anything after v9 will work, but I am using v11.
+Make sure you have JAVA_HOME set as an environmental variable.
 
 ## Install Java using openJDK
 
