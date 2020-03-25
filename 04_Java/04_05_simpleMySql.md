@@ -1,4 +1,4 @@
-#04_05 Simple MySQL with Java
+# 04_05 Simple MySQL with Java
 
 In Java, we connect to relational databases in a 2-step process.
 
