@@ -1,5 +1,4 @@
-# 04_3
- Getting Code working with Java
+# 04_3 Getting Code working with Java
 
 ## Confirm that Java is installed and set up.
 
