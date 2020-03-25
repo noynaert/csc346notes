@@ -39,6 +39,6 @@ Install the following in order
 
 Actually, I searched for "Java Extension Pack" in the VS code Extension fly-out.  All of the above were installed at once.
 
-## Create a simple Maven project and run it.
+## Create a simple Java project and run it.
 
 ## Run Maven from the command line.
