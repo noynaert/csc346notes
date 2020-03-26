@@ -1,5 +1,11 @@
 # 04_05 Simple MySQL with Java
 
+## Video Links
+
+* [Background and structural ideas about linking Java and databases](https://mwsu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e4a02893-c048-41dc-90cf-ab89010f910e)
+* [Code for connecting to MySql](https://mwsu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=704f33fd-df12-461c-b10b-ab89010f9149)
+
+
 In Java, we connect to relational databases in a 2-step process.
 
 * JDBC is a generic set of Java classes that apply to all (or at least most) relational databases.  All relational databases cover certain operations such as queries, updates, and creating tables.
@@ -40,7 +46,7 @@ Make note of the version number.  We will need that later.
 I added the following statement to the end of my ~/.profile file.
 
 ```bash
-   export CLASSPATH=$HOME/lib
+   export CLASSPATH=$HOME/lib/*
 ```
 
 The above should set the classpath the next time you log in.  To set it temporarily, execute the command at the command line, and then confirm it with ```echo $CLASSPATH```
@@ -78,3 +84,56 @@ copy and paste the generated code.
 Open the ```pom.xml``` file and locate the ```<dependencies>``` tag.  Note it is plural.
 
 Paste the dependency from mvnrepository into the dependencies section of your pom.xml file.
+
+## The source code
+
+```java
+package edu.missouriwestern.noynaert.csc346;
+
+/*
+*  Demonstrates simple access to mysql from Java 
+*/
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+        Connection conn = null;
+        String user = "csc254";
+        String password = "age126";
+        String host = "jdbc:mysql://noynaert.cs.missouriwestern.edu/misc";
+
+        try {
+            String queryString = "SELECT state, nickname, population FROM states ORDER BY nickname";
+            Statement st = null;
+            java.sql.ResultSet rs = null;
+
+            conn = DriverManager.getConnection(host, user, password);
+            st = conn.createStatement();
+            rs = st.executeQuery(queryString);
+
+            while (rs.next()){
+                String name = rs.getString("state");
+                String nickname = rs.getString("nickname");
+                long population = rs.getLong("population");
+                System.out.printf("%s (the %s) has a population of %d.\n", name, nickname, population);
+            }
+
+            rs.close();
+            st.close();
+            conn.close();
+            System.out.println("\nOpened and Closed!");
+		} catch (SQLException e) {
+            System.err.println("Caught Error: " + e.getMessage());
+			e.printStackTrace();
+		}
+
+        System.out.println( "\nDone!" );
+    }
+}
+```

@@ -1,5 +1,10 @@
 # Installing Java on Linux
 
+## Video Links
+
+* [First Video](https://mwsu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=86f072ea-2a70-436f-b700-ab7f0189c1db)
+* [Second Video]()
+
 ## Verify your version of Java
 
 First do the command 

@@ -1,5 +1,9 @@
 # 04_3 Getting Code working with Java
 
+## Link to Video
+
+* [Running Java in VS Code](https://mwsu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=90b7ab12-05b5-447f-993b-ab89010f90d9)
+
 ## Confirm that Java is installed and set up.
 
 ```bash
