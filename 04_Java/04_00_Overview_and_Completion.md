@@ -1,4 +1,4 @@
-#04_00 Overview and Course Completion
+# 04_00 Overview and Course Completion
 
 I made these notes and videos 10 days ago (but I only uploaded two at the time).  
 
