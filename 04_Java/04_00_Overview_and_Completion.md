@@ -1,5 +1,11 @@
 # 04_00 Overview and Course Completion
 
+## Video Link
+
+* [Overview Video](https://mwsu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cbedc708-8dd5-4277-8b11-ab8a0078eda6)
+
+## Commentary
+
 I made these notes and videos 10 days ago (but I only uploaded two at the time).  
 
 It is amazing how much can change in 10 days!  When I started these videos I expected to come back from
@@ -7,11 +13,11 @@ Spring break.  I thought some people would be staying away from school.  But I f
 
 I have had to think a lot about how to do course completion.  I know I am going to have to cut way back from my original expection for the formal course completion.  I plan to do a second and more informal completion activity after the course is formally finished on April 24.
 
-## Enrichment
+### Enrichment
 
 One of my realizations is this would be more of a voluntary enrichment activity than a traditional course for a grade.  I had an opportunity to do enrichment as well.
 
-## Do we still need VS Code and CLI?
+### Do we still need VS Code and CLI?
 
 In my original plan for the course we would be integrating Spring and Docker.  That was going to require some work with Java, Maven, and Docker at the command line.
 
