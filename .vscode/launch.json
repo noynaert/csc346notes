@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "CodeLens (Launch) - App",
+            "request": "launch",
+            "mainClass": "com.noynaert.csc346.gson.App",
+            "projectName": "testgson"
+        },
+        {
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
